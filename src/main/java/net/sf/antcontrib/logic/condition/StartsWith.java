@@ -23,7 +23,7 @@ public class StartsWith extends ProjectComponent implements Condition {
 	}
 
 	public boolean eval() throws BuildException {
-		if (string == null || propertyName == null)
+		if (string == null && propertyName == null)
 			throw new BuildException("string or property must be set.");
 		if (with == null)
 			throw new BuildException("with must be set.");
