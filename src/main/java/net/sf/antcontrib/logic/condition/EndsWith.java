@@ -1,9 +1,10 @@
 package net.sf.antcontrib.logic.condition;
 
 import org.apache.tools.ant.BuildException;
-import org.apache.tools.ant.taskdefs.condition.IsTrue;
+import org.apache.tools.ant.ProjectComponent;
+import org.apache.tools.ant.taskdefs.condition.Condition;
 
-public class EndsWith extends IsTrue {
+public class EndsWith extends ProjectComponent implements Condition {
 
 	private String string = null;
 	private String propertyName = null;

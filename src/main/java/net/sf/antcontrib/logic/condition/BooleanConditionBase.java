@@ -61,7 +61,7 @@ public class BooleanConditionBase extends ConditionBase {
 		super.add(i);
 	}
 	
-	public void addEndsWith(StartsWith i) {
+	public void addEndsWith(EndsWith i) {
 		super.add(i);
 	}
 }
