@@ -3,7 +3,7 @@ package net.sf.antcontrib.logic.condition;
 import org.apache.tools.ant.BuildException;
 import org.apache.tools.ant.taskdefs.condition.Condition;
 
-public class NotEx extends BooleanConditionBase {
+public class Not_ extends BooleanConditionBase implements Condition{
 	public boolean eval() throws BuildException {
 		if (countConditions() > 1) {
 			throw new BuildException("You must not nest more than one "

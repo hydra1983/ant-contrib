@@ -60,8 +60,20 @@ public class BooleanConditionBase extends ConditionBase {
 	public void addStartsWith(StartsWith i) {
 		super.add(i);
 	}
-	
+
 	public void addEndsWith(EndsWith i) {
+		super.add(i);
+	}
+
+	public void addAnd_(And_ i) {
+		super.add(i);
+	}
+
+	public void addNot_(Not_ i) {
+		super.add(i);
+	}
+
+	public void addOr_(Or_ i) {
 		super.add(i);
 	}
 }

@@ -5,7 +5,7 @@ import java.util.Enumeration;
 import org.apache.tools.ant.BuildException;
 import org.apache.tools.ant.taskdefs.condition.Condition;
 
-public class OrEx extends BooleanConditionBase {
+public class Or_ extends BooleanConditionBase implements Condition {
 	public boolean eval() throws BuildException {
 		Enumeration e = getConditions();
 		while (e.hasMoreElements()) {
