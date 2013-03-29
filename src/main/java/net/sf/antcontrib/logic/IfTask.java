@@ -21,7 +21,7 @@ import java.util.Vector;
 import org.apache.tools.ant.BuildException;
 import org.apache.tools.ant.taskdefs.Sequential;
 import org.apache.tools.ant.taskdefs.condition.Condition;
-import org.apache.tools.ant.taskdefs.condition.ConditionBase;
+import net.sf.antcontrib.logic.condition.BooleanConditionBase;
 
 /**
  * Perform some tasks based on whether a given condition holds true or
@@ -106,10 +106,10 @@ import org.apache.tools.ant.taskdefs.condition.ConditionBase;
  *
  * @author <a href="mailto:stefan.bodewig@freenet.de">Stefan Bodewig</a>
  */
-public class IfTask extends ConditionBase {
+public class IfTask extends BooleanConditionBase {
 
     public static final class ElseIf
-        extends ConditionBase
+        extends BooleanConditionBase
     {
         private Sequential thenTasks = null;
 
