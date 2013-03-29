@@ -76,4 +76,8 @@ public class BooleanConditionBase extends ConditionBase {
 	public void addOr_(Or_ i) {
 		super.add(i);
 	}
+	
+	public void addIsSet_(IsSet_ i) {
+		super.add(i);
+	}
 }
